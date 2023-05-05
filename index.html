@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="follow,index">
+    <meta name="description" content="🔐 English Academy">
+	<meta name="keywords" content="English Academy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logo.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png">
+    <title>SenseLimits Academy</title>
+    
+</head>
+<body>
+    <div class="upper">
+       <br><br><br>
+        <div class="login-div">
+            <form action="./verifiy-login.php" method="post" class="login">
+                <center><img src="./img/logo.png" width="200px" alt="Login by therumi08"/></center>
+                <br>
+                <div class="input-text">
+                    <input type="text" id="usuario" name="usuario" placeholder="Username" required/>
+                    <div class="warning-input" id="warningEmail">
+                        Please enter a valid email or phone number.
+                    </div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Password" required/>
+                    <div class="warning-input" id="warningPassword">
+                        Your password must contain between 4 and 60 characters.
+                    </div>
+                </div>
+                
+                <div>
+                    <input type="submit" class ="signin-button"  value="Access">
+                </div>
+                <div class="remember-flex">
+                    <div class="help">
+                        <a class="color_text" href="#">Need help?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-width">
+            <center>You have problems?<a href="https://api.whatsapp.com/send?phone=34683249330" class="tel-link"> Contact Us</a></center>
+            <div>
+                <ul class="bottom-flex">
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Frequent questions
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Privacy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+
+                        <center>
+                        <select title="Select your Lenguage" class="select-language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                        </select>
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script>$(document).ready(function() {
+                            $('.select-language').on('change', function() {
+                            var language = $(this).val();
+                            if (language === 'en') {
+                                window.location.href = 'index-en.html'; // redirecciona a la página en inglés
+                            } else if (language === 'es') {
+                                window.location.href = 'index.html'; // redirecciona a la página en español
+                            }
+                            });
+                        });
+                        </script>
+                        </center>
+                    
+                        <a href="https://www.estudiowebdoce.com/" class="link-bottom">
+                        <center><b>Powered By therumi08</b></center>
+
+
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
